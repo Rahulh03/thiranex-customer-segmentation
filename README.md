@@ -86,7 +86,7 @@ thiranex-customer-segmentation/
 
 The Elbow Method was used to determine the appropriate number of clusters for the K-Means algorithm.
 
-![Elbow Method](elbow_method.png)
+![Elbow Method](https://raw.githubusercontent.com/Rahulh03/thiranex-customer-segmentation/blob/main/elbow_method.png)
 
 ### Customer Segmentation
 
