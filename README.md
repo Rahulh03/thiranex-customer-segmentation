@@ -80,16 +80,18 @@ thiranex-customer-segmentation/
 ├── customer_segmentation.py
 ├── requirements.txt
 └── README.md
+```
+
 ## Results and Visualizations
 
 ### Elbow Method
 
 The Elbow Method was used to determine the appropriate number of clusters for the K-Means algorithm.
 
-![Elbow Method](https://raw.githubusercontent.com/Rahulh03/thiranex-customer-segmentation/blob/main/elbow_method.png)
+![Elbow Method](elbow_method.png)
 
 ### Customer Segmentation
 
 The K-Means algorithm successfully divided the customers into 5 clusters based on Annual Income and Spending Score.
 
-![Customer Segmentation](https://rawgithubusercontent.com/Rahulh03/thiranex-customer-segmentation/blob/main/customer_clusters.png)
+![Customer Segmentation](customer_clusters.png)
