@@ -92,4 +92,4 @@ The Elbow Method was used to determine the appropriate number of clusters for th
 
 The K-Means algorithm successfully divided the customers into 5 clusters based on Annual Income and Spending Score.
 
-![Customer Clusters](https://rawgithubusercontent.com/Rahulh03/thiranex-customer-segmentation/blob/main/customer_clusters.png)
+![Customer Segmentation](https://rawgithubusercontent.com/Rahulh03/thiranex-customer-segmentation/blob/main/customer_clusters.png)
