@@ -1,97 +1,90 @@
-# Thiranex Customer Segmentation Project
+# Predictive Analytics Using Historical Data
 
-## Project Overview
+## Thiranex Data Analytics Internship - Task 3
 
-This project focuses on customer segmentation using machine learning techniques. Customers are grouped into meaningful segments based on their annual income and spending score.
+### Project Overview
 
-The project uses the K-Means clustering algorithm to identify customer groups with similar purchasing behaviour.
+This project focuses on predictive analytics using historical monthly sales data. A Linear Regression model is used to analyze historical sales patterns and forecast future sales for 2026.
 
-## Objectives
+### Objectives
 
-- Analyze customer data and purchasing behaviour.
-- Identify meaningful customer segments.
-- Apply K-Means clustering for customer segmentation.
-- Visualize the identified customer groups.
-- Generate useful business insights from the customer segments.
+- Clean and preprocess historical sales data
+- Analyze historical sales trends
+- Build a predictive regression model
+- Evaluate model performance
+- Forecast future sales
+- Visualize actual and predicted sales
 
-## Technologies Used
+### Dataset
+
+The dataset contains monthly sales records from January 2024 to December 2025.
+
+Columns:
+
+- Month - Month and year of the sales record
+- Sales - Monthly sales value
+- Month_Number - Numerical representation of time used by the model
+
+### Data Preprocessing
+
+The following preprocessing steps were performed:
+
+1. Converted the Month column into datetime format.
+2. Checked for missing values.
+3. Checked for duplicate records.
+4. Created a numerical Month_Number feature.
+5. Divided the data into training and testing sets.
+
+### Machine Learning Model
+
+A Linear Regression model was used to predict future sales.
+
+The first 80% of the historical observations were used for training, while the remaining 20% were used for testing.
+
+### Model Evaluation
+
+The model was evaluated using:
+
+- Mean Absolute Error (MAE): 139.45
+- Root Mean Squared Error (RMSE): 163.57
+- R² Score: 0.23
+
+### Forecasting
+
+The trained model was used to forecast monthly sales for all 12 months of 2026.
+
+The predicted sales show an overall increasing trend based on the historical data.
+
+### Visualizations
+
+The project includes:
+
+- Historical Monthly Sales
+- Actual vs Predicted Sales
+- 2026 Sales Forecast
+- Historical Sales and 2026 Forecast
+
+### Technologies Used
 
 - Python
 - Pandas
 - NumPy
 - Matplotlib
 - Scikit-learn
-- K-Means Clustering
+- Google Colab
+- GitHub
 
-## Dataset
+### Project Files
 
-The project uses the Mall Customers dataset.
+- `sales_data.csv` - Historical sales dataset
+- `predictive_sales.py` - Python source code
+- `requirements.txt` - Required Python libraries
+- `historical_sales.png` - Historical sales visualization
+- `actual_vs_predicted.png` - Actual vs predicted sales
+- `2026_sales_forecast.png` - 2026 forecast visualization
+- `historical_and_forecast.png` - Combined historical and forecast visualization
 
-The dataset contains customer information such as:
+### Conclusion
 
-- Customer ID
-- Gender
-- Age
-- Annual Income
-- Spending Score
+The project demonstrates how historical sales data can be used to build a predictive analytics solution. Linear Regression was applied to identify the relationship between time and sales and generate future sales forecasts for 2026.
 
-## Methodology
-
-### 1. Data Loading
-The customer dataset is loaded using Pandas.
-
-### 2. Feature Selection
-Annual Income and Spending Score are selected as the main features for clustering.
-
-### 3. Elbow Method
-The Elbow Method is used to determine a suitable number of clusters by analyzing the Within-Cluster Sum of Squares (WCSS).
-
-### 4. K-Means Clustering
-K-Means clustering is applied to divide customers into five meaningful groups.
-
-### 5. Visualization
-The resulting customer segments and cluster centroids are visualized using Matplotlib.
-
-## Customer Segmentation
-
-The clustering process helps identify groups such as:
-
-- Customers with high income and high spending
-- Customers with high income and low spending
-- Customers with low income and high spending
-- Customers with low income and low spending
-- Customers with moderate income and spending
-
-## Business Insights
-
-Customer segmentation can help businesses:
-
-- Design targeted marketing campaigns.
-- Identify high-value customers.
-- Develop personalized offers.
-- Improve customer retention strategies.
-- Understand different purchasing behaviours.
-
-## Project Structure
-
-```text
-thiranex-customer-segmentation/
-│
-├── customer_segmentation.py
-├── requirements.txt
-└── README.md
-```
-
-## Results and Visualizations
-
-### Elbow Method
-
-The Elbow Method was used to determine the appropriate number of clusters for the K-Means algorithm.
-
-![Elbow Method](elbow_method.png)
-
-### Customer Segmentation
-
-The K-Means algorithm successfully divided the customers into 5 clusters based on Annual Income and Spending Score.
-
-![Customer Segmentation](customer_clusters.png)
